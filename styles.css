@@ -24,6 +24,7 @@
 html { -webkit-text-size-adjust: 100%; }
 
 body {
+  text-transform: lowercase;
   margin: 0;
   background: var(--paper);
   color: var(--ink);
@@ -91,7 +92,7 @@ a { color: inherit; }
   font-size: .75rem;
   font-weight: 500;
   letter-spacing: .14em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: var(--ink-2);
 }
 .release-line__rule {
@@ -349,7 +350,7 @@ a { color: inherit; }
   margin: 0 0 .5rem;
   font-size: .75rem;
   letter-spacing: .12em;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 .footer__ig {
   display: inline-flex;
