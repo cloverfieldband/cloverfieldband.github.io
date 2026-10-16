@@ -47,7 +47,7 @@ window.BAND = {
   // ---- Main buttons ---------------------------------------------
   // Your streaming link (DistroKid HyperFollow, Linkfire, etc.).
   // Paste the whole link, starting with https://
-  streamingLink: "",
+  streamingLink: "https://open.spotify.com/artist/1y6cBx7t7Q1FnlzWKfSqU2",
 
   // YouTube link to the full performance video.
   youtubeLink: "https://www.youtube.com/watch?v=epQU-pjzY74",
