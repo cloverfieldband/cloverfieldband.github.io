@@ -1,0 +1,126 @@
+<!doctype html>
+<!--
+  ================================================================
+  CLOVER FIELD · LIVE EP LANDING PAGE
+
+  You don't need to edit this file. All band info (links, songs,
+  video, Instagram) goes in band-info.js; media files go in /assets.
+
+  LINK PREVIEW (do this once the site is online)
+  The block marked "LINK PREVIEW" below controls what shows up when
+  someone shares the link in a DM or text. Apps that build previews
+  need full web addresses, so after the site has a real address, replace
+  https://YOUR-SITE.com with it (3 spots).
+  ================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Clover Field · Live EP out now</title>
+  <meta name="description" content="Clover Field's live EP is out now on all streaming platforms.">
+
+  <!-- ===== LINK PREVIEW: replace https://YOUR-SITE.com once the site is live ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clover Field · Live EP out now">
+  <meta property="og:description" content="Stream it everywhere, or watch the full performance on YouTube.">
+  <meta property="og:url" content="https://nate-bledsoe.github.io/clover-field/">
+  <meta property="og:image" content="https://nate-bledsoe.github.io/clover-field/assets/poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nate-bledsoe.github.io/clover-field/assets/poster.jpg">
+  <!-- ===== end LINK PREVIEW ===== -->
+
+  <meta name="theme-color" content="#eef1e9">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='%234d6a50'%3E%3Cpath id='l' d='M16 15C12.5 12.5 10.5 9.5 11 7c.4-2 2.6-2.6 5-.5 2.4-2.1 4.6-1.5 5 .5.5 2.5-1.5 5.5-5 8Z'/%3E%3Cuse href='%23l' transform='rotate(90 16 16)'/%3E%3Cuse href='%23l' transform='rotate(180 16 16)'/%3E%3Cuse href='%23l' transform='rotate(270 16 16)'/%3E%3C/g%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Clover mark, defined once and reused below -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="clover" viewBox="0 0 32 32">
+      <g fill="currentColor">
+        <path id="leaf" d="M16 15C12.5 12.5 10.5 9.5 11 7c.4-2 2.6-2.6 5-.5 2.4-2.1 4.6-1.5 5 .5.5 2.5-1.5 5.5-5 8Z"/>
+        <use href="#leaf" transform="rotate(90 16 16)"/>
+        <use href="#leaf" transform="rotate(180 16 16)"/>
+        <use href="#leaf" transform="rotate(270 16 16)"/>
+      </g>
+      <path d="M16.6 17.2c1.2 3.6 3 6.6 6.4 9.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <!-- Only appears when previewing on your own computer -->
+  <div class="setup-bar" hidden></div>
+
+  <!-- Text below is filled in from band-info.js -->
+  <main>
+
+    <header class="hero wrap">
+      <p class="release-line" data-field="releaseLine">Live EP · Out now</p>
+      <h1 class="wordmark">
+        <img class="wordmark__logo" alt="Clover Field" hidden>
+        <span class="wordmark__text">Clover Field</span>
+        <svg class="wordmark__clover" aria-hidden="true"><use href="#clover"/></svg>
+      </h1>
+      <p class="tagline" data-field="tagline"></p>
+    </header>
+
+    <section class="clip" aria-label="Live performance clip">
+      <div class="clip__frame">
+        <video class="clip__video" playsinline loop preload="metadata"></video>
+
+        <button class="clip__play" type="button" aria-label="Play clip with sound">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+        </button>
+
+        <button class="clip__sound" type="button" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span class="clip__sound-label">Tap for sound</span>
+        </button>
+
+        <p class="clip__fallback" hidden>Clip coming soon</p>
+      </div>
+
+      <p class="clip__caption wrap">
+        <span data-field="clipCaption"></span>
+        <span class="clip__hint" aria-hidden="true"></span>
+      </p>
+    </section>
+
+    <section class="actions wrap" aria-label="Listen and watch">
+      <a class="btn btn--stream" data-link="streamingLink" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10v4M9 7v10M13 4v16M17 8v8M21 11v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Stream the EP</span>
+      </a>
+      <a class="btn btn--watch" data-link="youtubeLink" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7v10l8-5z" fill="currentColor"/></svg>
+        <span>Watch the full video on YouTube</span>
+      </a>
+      <p class="actions__note">Spotify, Apple Music, YouTube Music &amp; more</p>
+    </section>
+
+    <section class="tracks wrap" aria-labelledby="tracks-title">
+      <svg class="divider" aria-hidden="true"><use href="#clover"/></svg>
+      <h2 class="tracks__title" id="tracks-title">Live EP</h2>
+      <ol class="tracklist"></ol>
+    </section>
+
+  </main>
+
+  <footer class="footer wrap">
+    <p class="footer__label">Find us here too</p>
+    <a class="footer__ig" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="7" r="1" fill="currentColor"/></svg>
+      <span>Instagram</span>
+    </a>
+    <p class="footer__legal">© <span data-year>2026</span> Clover Field</p>
+  </footer>
+
+  <script src="band-info.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
